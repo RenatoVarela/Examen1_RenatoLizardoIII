@@ -310,7 +310,7 @@ void movimiento1(char** tabla, int filas, int cols) {
         bool siguiente = false;
         char aux;
 
-        cout<<"Ingrese las coordenadas x (fila) del lugar al que desea mover"<<endl;
+        cout<<"Ingrese las coordenadas del lugar al que desea mover"<<endl;
         cin>> coordenada;
 
 
@@ -350,7 +350,7 @@ void movimiento1(char** tabla, int filas, int cols) {
 
             coordenadas.clear();
 
-            cout<<"El movimiento tiene que ser ortogonal vuelva a ingresar: "<<endl;
+            cout<<"El movimiento tiene que ser recto vuelva a ingresar: "<<endl;
              cout<<"INgrese las coordenadas de nuevo"<<endl;
             cin>> coordenada;
 
@@ -389,7 +389,7 @@ void movimiento1(char** tabla, int filas, int cols) {
 
         }
         }
-        
+   
         eliminar(tabla, filas2, columnas2);
 
        
@@ -410,7 +410,7 @@ void movimiento2(char** tabla, int filas, int cols) {
         bool siguiente = false;
         char aux;
 
-	cout<<"Ingrese las coordenadas x (fila) del lugar al que desea mover"<<endl;
+	cout<<"Ingrese las coordenadas del lugar al que desea mover"<<endl;
         cin>> coordenada;
 
 
@@ -480,7 +480,9 @@ void movimiento2(char** tabla, int filas, int cols) {
 
         }
         
-        }
+      }
+
+
         
         ganar2(tabla);
        eliminar2(tabla, filas2, columnas2);
